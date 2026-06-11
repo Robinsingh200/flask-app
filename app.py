@@ -9,4 +9,4 @@ def hello_world():
 
 @app.route('/health')
 def health():
-    return 'Server is up and running -2'
+    return 'Server is up and running -5'
