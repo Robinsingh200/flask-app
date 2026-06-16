@@ -35,6 +35,10 @@ pipeline {
                  echo 'finished -deploy'
                  sh 'echo $BUILD_NUMBER'
                 sh 'echo $GIT_COMMIT'
+                sh 'echo $JOB_NAME'
+                sh 'echo $WORKSPACE'
+                sh 'echo $JENKINS_HOME'
+                sh 'echo $BRANCH_NAME'
             }
         }
     }
