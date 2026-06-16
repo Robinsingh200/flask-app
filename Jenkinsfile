@@ -33,6 +33,8 @@ pipeline {
             steps {
                  sh 'docker run -d -p 80:80 devops-app'
                  echo 'finished -deploy'
+                 sh 'echo $BUILD_NUMBER'
+                sh 'echo $GIT_COMMIT'
             }
         }
     }
